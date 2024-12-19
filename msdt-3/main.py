@@ -36,9 +36,9 @@ def validate_csv(file_path):
                 invalid_rows.append(row_number)
     return invalid_rows
 
-# file_path = "C:/Users/ДолговаЕВ/Desktop/Универ/Современные средства разработки ПО/RegularExpressions/MSDT/msdt-3/39.csv"
-file_path = "39.csv"
+file_path = "C:/Users/ДолговаЕВ/Desktop/Универ/Современные средства разработки ПО/RegularExpressions/MSDT/msdt-3/39.csv"
 invalid_rows = validate_csv(file_path)
 
 checksum = calculate_checksum(invalid_rows)
 serialize_result(39, checksum)
+print(checksum)
